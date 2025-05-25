@@ -6,6 +6,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<main>
 		<section id="hero">
+            <div class="aboutme">
             <h1>About me</h1>
 			<p>
                 I'm Lily. I have many interests—among them: software,
@@ -36,7 +37,7 @@ import Layout from '../layouts/Layout.astro';
             <p>
                 Yes, I use the em dash—no, I'm not an LLM.
             </p>
-            
+            </div>
 		</section>
 	</main>
 <style>
@@ -80,6 +81,21 @@ h1 {
 	} 
     p + p {
         margin-top: 0.5em;
+    }
+
+      .aboutme{
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      max-width: 65ch;
+      text-align: center;
+      transition: background 0.35s;
+    }
+
+      .aboutme:hover {
+      background: rgba(255, 255, 255, 0.06);
     }
 	
 </style>
