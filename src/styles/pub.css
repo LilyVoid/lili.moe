@@ -96,7 +96,9 @@ html, body {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 
 @media (max-width: 768px) {
   #menu-toggle { display: block; }
