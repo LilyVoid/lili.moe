@@ -1,5 +1,6 @@
 ---
 let current = Astro.url.pathname.replace(/\/$/, '') || '/';
+import "../styles/pub.css";
 ---
 
 <!doctype html>
@@ -9,7 +10,6 @@ let current = Astro.url.pathname.replace(/\/$/, '') || '/';
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="Lili.moe is Lily's personal site.">
-    <link rel="stylesheet" href="/pub.css">
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -23,7 +23,6 @@ let current = Astro.url.pathname.replace(/\/$/, '') || '/';
 	<body>
 <nav>
   <button id="menu-toggle" aria-label="toggle menu">☰</button>
-
   <ul id="nav-links" class="nav">
     <li><a href="/"         aria-current={current === '/'          ? 'page' : undefined}>home</a></li>
     <li><a href="/about"    aria-current={current === '/about'     ? 'page' : undefined}>about</a></li>
