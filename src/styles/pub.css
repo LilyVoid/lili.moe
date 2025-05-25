@@ -94,6 +94,7 @@ html, body {
   font-size: 1.6rem;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
