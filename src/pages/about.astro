@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+	<main>
+		<section id="hero">
+            <h1>About me</h1>
+			<p>
+                I'm Lily. I have many interests—among them: software,
+                hardware, general science, language learning,
+                human biology, gaming, and whatever random topic steals my attention for the day.
+
+            </p>
+            <p>
+                I program random things in Rust, and I have recently been getting into web development as well. I'm currently
+                learning astro and plain JS.
+            </p>
+            <p>
+                I plan on buying a drawing tablet later, as art has been on my mind for a while.
+            </p>
+            <p>
+                I have been dealing with crippling depression since the age of 11
+                (which has gotten a lot better)—so you won't see me being very
+                talkative/social—I have been deprived of socialization from a young age, and my autism diagnosis doesn't help.
+            </p>
+
+            <p>
+                Most of the things I know are self-taught via the internet.
+            </p>
+            <p> If you struggle with emotional control—trauma-dumping, outbursts, mood swings, or
+                acting toxic for no reason,
+                please never speak with me—and consider getting the help that you need.
+            </p>
+            <p>
+                Yes, I use the em dash—no, I'm not an LLM.
+            </p>
+            
+		</section>
+	</main>
+<style>
+
+	main {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+        padding-top: 2.5rem;
+	}
+
+	#hero {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 16px;
+	}
+	
+
+h1 {
+  font-size: 3.0rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-shadow:
+  0 0 0.4em rgba(255, 255, 255, 0.1),
+  0 0 1em rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+	p {
+		color: #ffffff;
+		font-size: 1.1em;
+		line-height: 1.75;
+		letter-spacing: -0.006em;
+		margin: 0;
+        max-width: 50ch;
+        text-align: center;
+        font-weight: 400;
+	} 
+    p + p {
+        margin-top: 0.5em;
+    }
+	
+</style>
+
+</Layout>

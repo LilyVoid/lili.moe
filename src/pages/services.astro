@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+
+	<main>
+		<section id="hero">
+            <h1>Services</h1>
+           <!--  <div class="donation-method">
+            <h2>Matrix</h2>
+             
+            </div>
+             <div class="donation-method">
+            <h2>Placeholder</h2>
+             <code></code>
+            </div>--> 
+            <p>to be populated later</p>
+            
+		</section>
+	</main>
+<style>
+
+	main {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+    padding-top: 3.5rem;
+	}
+
+#hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  padding: 6rem 16px 2rem; 
+}
+	
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-shadow:
+  0 0 0.4em rgba(255, 255, 255, 0.1),
+  0 0 1em rgba(255, 255, 255, 0.05);
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+
+	p {
+		color: #ffffff;
+		font-size: 16px;
+		line-height: 1.75;
+		letter-spacing: -0.006em;
+		margin: 0;
+        max-width: 50ch;
+        text-align: center;
+        font-weight: 400;
+	} 
+    p + p {
+        margin-top: 0.5em;
+    }
+
+  .donation-method {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  max-width: 45ch;
+  text-align: center;
+  word-break: break-all;
+  transition: background 0.2s;
+}
+
+.donation-method:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+	
+</style>
+
+</Layout>

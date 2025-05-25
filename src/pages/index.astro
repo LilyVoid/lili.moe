@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+// TODO: add some kind of introductory paragraph
+---
+
+<Layout>
+
+	<main>
+		<section id="hero">
+			<h1>Lily</h1> 
+		</section>
+	</main>
+<style>
+
+	main {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+	}
+
+	#hero {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		padding: 16px;
+	}
+	
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-shadow:
+  0 0 0.4em rgba(255, 255, 255, 0.1),
+  0 0 1em rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+
+/*	p {
+		color: #4b5563;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.006em;
+		margin: 0;
+	} DON'T fucking delete the p it will be used later*/
+
+	
+</style>
+
+</Layout>

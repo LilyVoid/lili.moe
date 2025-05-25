@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+	<main>
+		<section id="hero">
+			<h1>Contact Lily</h1> 
+             <p><a class="contact" href="https://discord.com/users/1055538614810968245">discord</a></p>
+             <p><a class="contact" href="https://steamcommunity.com/id/lilyrs/">steam</a></p>      
+		</section>
+	</main>
+<style>
+
+	main {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		padding-top: 4.0rem;
+
+	}
+
+	#hero {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: start;
+		padding: 48px;
+	}
+	
+    .intro {
+          opacity: 0.6;
+          margin-bottom: 1.5em;
+          font-size: 1.0em;
+    }
+
+    .contact {
+        color: #dfdfdf;
+        font-size: 1.5em;
+        display: inline-block;
+        margin-bottom: 1em;
+
+        
+    }
+    
+    .contact:hover {
+    color: #fff;
+    cursor: pointer;
+    }
+
+h1 {
+  font-size: 3.0rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-shadow:
+  0 0 0.4em rgba(255, 255, 255, 0.1),
+  0 0 1em rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+	p {
+		color: #d4d4d4;
+		font-size: 16px;
+		line-height:24px;
+		letter-spacing: -0.006em;
+		margin: 0;
+	}
+	
+</style>
+</Layout>
